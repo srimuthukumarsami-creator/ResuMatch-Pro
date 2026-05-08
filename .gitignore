@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+*.db
+.env
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+
+# Backend generated
+backend/models/*.pkl
+backend/resumatch.db
+backend/static/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
