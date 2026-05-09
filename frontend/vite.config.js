@@ -5,7 +5,7 @@ import { viteSingleFile } from 'vite-plugin-singlefile'
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
-  base: './',
+  base: '/ResuMatch-Pro/',
   server: {
     host: true,
     allowedHosts: 'all',
