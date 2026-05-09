@@ -42,4 +42,7 @@ export const compareResumes = (ids) => api.post('/api/compare', { screening_ids:
 export const getDashboard = () => api.get('/api/analytics/dashboard');
 export const getDatasetInfo = () => api.get('/api/dataset-info');
 
+// ── Career DNA ──
+export const analyzeCareerDNA = (data) => api.post('/api/career-dna', data);
+
 export default api;

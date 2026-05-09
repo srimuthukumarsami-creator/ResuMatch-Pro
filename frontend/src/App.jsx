@@ -10,6 +10,7 @@ import HowItWorksPage from './pages/HowItWorksPage';
 import DashboardPage from './pages/DashboardPage';
 import HistoryPage from './pages/HistoryPage';
 import ComparePage from './pages/ComparePage';
+import CareerDNAPage from './pages/CareerDNAPage';
 import SettingsPage from './pages/SettingsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/jd-analyzer" element={<JDAnalyzerPage />} />
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/compare" element={<ComparePage />} />
+            <Route path="/career-dna" element={<CareerDNAPage />} />
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/history" element={<HistoryPage />} />
             <Route path="/settings" element={<SettingsPage />} />

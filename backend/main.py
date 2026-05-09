@@ -747,6 +747,26 @@ async def screen_enhanced(request: Request):
 
 
 # ══════════════════════════════════════════════════════
+# CAREER DNA — Skill Genome & Career Path Predictor
+# ══════════════════════════════════════════════════════
+
+@app.post("/api/career-dna")
+async def career_dna_analysis(request: Request):
+    """Analyze resume and generate Career DNA: skill genome, career predictions,
+    skill synergies, and market readiness report."""
+    body = await request.json()
+    resume_text = body.get("resume_text", "")
+    if len(resume_text) < 50:
+        raise HTTPException(400, "Resume text too short (min 50 chars)")
+    try:
+        from career_dna import analyze_career_dna
+        result = analyze_career_dna(resume_text)
+        return result
+    except Exception as e:
+        raise HTTPException(500, f"Career DNA analysis failed: {str(e)}")
+
+
+# ══════════════════════════════════════════════════════
 # HEALTH & STATIC FILES
 # ══════════════════════════════════════════════════════
 

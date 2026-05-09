@@ -24,3 +24,7 @@ backend/static/
 
 # Logs
 *.log
+
+# Tunnel binaries
+cloudflared
+cloudflared.tgz

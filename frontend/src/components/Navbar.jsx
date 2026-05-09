@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FileSearch, Files, Microscope, GitCompareArrows, BookOpen, LayoutDashboard, Clock, Settings, LogOut, Menu, X, User } from 'lucide-react';
+import { FileSearch, Files, Microscope, GitCompareArrows, BookOpen, LayoutDashboard, Clock, Settings, LogOut, Menu, X, User, Dna } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const NAV_LINKS = [
   { to: '/screen', label: 'Screen', icon: FileSearch },
+  { to: '/career-dna', label: 'Career DNA', icon: Dna },
   { to: '/bulk', label: 'Bulk Screen', icon: Files },
   { to: '/jd-analyzer', label: 'JD Analyzer', icon: Microscope },
   { to: '/compare', label: 'Compare', icon: GitCompareArrows },
